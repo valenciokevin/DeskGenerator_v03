@@ -10,14 +10,92 @@
 </head>
 <body>
 
-    <!--<header>
+    <header>
         <h1>Atalhos</h1>
         <nav>
             <button><a href="../index.html">Generator</a></button>
             <button><a href="editor.html">Editor</a></button>
             <button><a href="atalhos.html">Atalhos</a></button>
         </nav>
-    </header>-->
+    </header>
+
+    <main>
+
+        <input type="text" name="agent-name" id="agent-name" placeholder="Agente">
+
+        <fieldset class="dados-cliente-container">
+            <legend>Dados Cliente</legend>
+            <div class="grid-container dados-cliente-container">
+
+                <label>
+                    Cliente
+                    <input type="text" name="client-name" id="client-name">
+                </label>
+                
+                <label>
+                    Empresa
+                    <input type="text" name="company-name" id="company-name">
+                </label>
+
+                <label>
+                    E-mail
+                    <input type="text" name="client-mail" id="client-mail">
+                </label>
+
+                <label>
+                    Telefone
+                    <input type="text" name="client-phone" id="client-phone">
+                </label>
+
+                <div class="grid-container contact-channel-container">
+                    <label>Canal de Contato</label>
+
+                    <div class="contact-channel-option">
+                        <label>
+                            <input type="radio" name="contact-channel" id="channel-whats" required> WhatsApp
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="contact-channel" id="channel-mail" required> E-mail
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="contact-channel" id="channel-phone" required> Telefone
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="contact-channel" id="channel-ramal" required> Ramal
+                        </label>
+                    </div>
+                    <input type="text" name="" id="contact-channel-input">
+                </div>                
+
+                <div class="container sla-container">
+                    <label>SLA:</label>
+                    <label>
+                        <input type="radio" name="sla-priority" id="sla-priority-1"> 1
+                    </label>
+
+                    <label>
+                        <input type="radio" name="sla-priority" id="sla-priority-2"> 2
+                    </label>
+
+                    <label>
+                        <input type="radio" name="sla-priority" id="sla-priority-3"> 3
+                    </label>
+
+                    <label>
+                        <input type="radio" name="sla-priority" id="sla-priority-4"> 4
+                    </label>
+
+                    <label>
+                        <input type="radio" name="sla-priority" id="sla-priority-5"> 5
+                    </label>
+                </div>
+
+            </div>
+        </fieldset>
+    </main>
     
     <script src="../js/script.js"></script>
     <script src="../js/atalhos.js"></script>

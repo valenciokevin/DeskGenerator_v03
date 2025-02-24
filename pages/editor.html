@@ -10,14 +10,59 @@
 </head>
 <body>
 
-    <!--<header>
+    <header>
         <h1>Editor</h1>
         <nav>
             <button><a href="../index.html">Generator</a></button>
             <button><a href="editor.html">Editor</a></button>
             <button><a href="atalhos.html">Atalhos</a></button>
         </nav>
-    </header>-->
+    </header>
+
+    <main>
+        <div class="container input-text-container">
+            <textarea name="input-text" id="input-text" placeholder="Digite aqui..."></textarea>
+            <div class="button-container">
+                <button id="clear-btn">Limpar</button>
+                <button id="whats-btn">Whats</button>
+            </div>
+        </div>
+
+        <div class="container output-text-container">
+            <div class="output-text">
+                <div class="output-text-label">
+                    <label>Upper</label>
+                    <button>Copy</button>
+                </div>
+                <input type="text" name="upper-case-output" id="upper-case-output">
+            </div>
+
+            <div class="output-text">
+                <div class="output-text-label">
+                    <label>Lower</label>
+                    <button>Copy</button>
+                </div>
+                <input type="text" name="lower-case-output" id="lower-case-output">
+            </div>
+
+            <div class="output-text">
+                <div class="output-text-label">
+                    <label>No Spaces</label>
+                    <button>Copy</button>
+                </div>
+                <input type="text" name="no-spaces-output" id="no-spaces-output">
+            </div>
+
+            <div class="output-text">
+                <div class="output-text-label">
+                    <label>Only Numbers</label>
+                    <button>Copy</button>
+                </div>
+                <input type="text" name="only-case-output" id="only-case-output">
+            </div>
+            
+        </div>
+    </main>
     
     <script src="../js/script.js"></script>
     <script src="../js/editor.js"></script>
