@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Generator</title>
@@ -17,6 +18,127 @@
             <button><a href="pages/atalhos.html">Atalhos</a></button>
         </nav>
     </header>
+
+    <main>
+        <form id="main-form" action="#">
+            <fieldset id="solicitation-container">
+                <legend>Motivo de contato</legend>
+
+                <div class="container" id="salutation-container">
+                    <div class="" id="salutation-options">
+                        <label>
+                            <input type="radio" name="client-salutation" id="male" required> Preazado
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="client-salutation" id="female" required> Prezada
+                        </label>
+                    </div>
+
+                    <label>
+                        <input type="text" name="" id="client-name" placeholder="Nome">
+                    </label>
+                </div>
+
+                    <label>Contato via</label>
+                    <div class="" id="initial-contact-container">
+                        <label>
+                            <input type="radio" name="initial-contact" id="initial-contact-whats" required> WhatsApp
+                        </label>
+
+                        <label>
+                            <input type="radio" name="initial-contact" id="initial-contact-phone" required> Telefone
+                        </label>
+
+                        <label>
+                            <input type="radio" name="initial-contact" id="initial-contact-mail" required> E-mail
+                        </label>
+                    </div>
+
+                    <div class="container" id="description-container">
+                        <label for="description">Descrição</label>
+                        <textarea name="description" id="description-area"></textarea>
+                    </div>
+
+                    <div class="container" id="internal-description-container">
+                        <label for="internal-description">Observações (Interno)</label>
+                        <textarea name="internal-description" id="internal-description-area"></textarea>
+                    </div>
+            </fieldset>
+
+            <fieldset id="internal-container">
+                <legend>Interno</legend>
+
+                <label>Canal de Contato</label>
+                <div class="grid-container" id="contact-channel-container">
+                    <div class="container contact-channel-option">
+                        <label>
+                            <input type="checkbox" name="contact-channel" id="contact-channel-whats"> WhatsApp
+                        </label>
+                        <input type="text" name="contact-channel-input" id="whats-input">
+                    </div>
+
+                    <div class="container contact-channel-option">
+                        <label>
+                            <input type="checkbox" name="contact-channel" id="contact-channel-mail"> E-mail
+                        </label>
+                        <input type="text" name="contact-channel-input" id="mail-input">
+                    </div>
+
+                    <div class="container contact-channel-option">
+                        <label>
+                            <input type="checkbox" name="contact-channel" id="contact-channel-phone"> Telefone
+                        </label>
+                        <input type="text" name="contact-channel-input" id="phone-input">
+                    </div>
+
+                    <div class="container contact-channel-option">
+                        <label>
+                            <input type="checkbox" name="contact-channel" id="contact-channel-ramal"> Ramal
+                        </label>
+                        <input type="text" name="contact-channel-input" id="ramal-input">
+                    </div>
+                </div>
+
+                <label>Observações Internas</label>
+
+                <div class="container" id="internal-obs-container">
+
+                    <label for="client-contact">Contato</label>
+                    <input type="text" name="client-contact" id="obs-client-contact">
+
+                    <label for="host">Host</label>
+                    <input type="text" name="host" id="obs-host">
+
+
+                    <label for="link-atendimento">Link de Atendimento</label>
+                    <input type="text" name="link-atendimento" id="obs-link-atendimento">
+                </div>
+            </fieldset>
+            
+            <div class="button-container">
+                <input type="submit" name="" id="submitForm" value="Gerar">
+                <button class="btn" id="clear-form-bt" onclick="clearForm()">Limpar</button>
+            </div>
+        </form>
+
+        <fieldset id="output-message-container">
+            <legend>Chamado Gerado</legend>
+
+            <div class="output-navbar">
+                <button>Copy</button>
+
+                <div>
+                    <button>Mídia</button>
+                    <button>Linha</button>
+                    <button>Ramal</button>
+                </div>
+            </div>
+
+            <label for="">Chamado</label>
+            <textarea name="" id="output-message"></textarea>
+        </fieldset>
+    </main>
 
     <script src="js/script.js"></script>
     <script src="js/index.js"></script>
