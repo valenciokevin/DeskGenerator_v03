@@ -21,80 +21,106 @@
 
     <main>
 
-        <input type="text" name="agent-name" id="agent-name" placeholder="Agente">
+        
+        <input type="text" name="agent-name" id="agentName" placeholder="Agente">
+        
+        <div class="grid-container">
+            <fieldset class="dados-cliente-container">
+                <legend>Dados Cliente</legend>
 
-        <fieldset class="dados-cliente-container">
-            <legend>Dados Cliente</legend>
-            <div class="grid-container dados-cliente-container">
-
-                <label>
-                    Cliente
-                    <input type="text" name="client-name" id="client-name">
-                </label>
-                
-                <label>
-                    Empresa
-                    <input type="text" name="company-name" id="company-name">
-                </label>
-
-                <label>
-                    E-mail
-                    <input type="text" name="client-mail" id="client-mail">
-                </label>
-
-                <label>
-                    Telefone
-                    <input type="text" name="client-phone" id="client-phone">
-                </label>
-
-                <div class="grid-container contact-channel-container">
-                    <label>Canal de Contato</label>
-
-                    <div class="contact-channel-option">
-                        <label>
-                            <input type="radio" name="contact-channel" id="channel-whats" required> WhatsApp
-                        </label>
+                <form action="">
+                    <div class="grid-container dados-cliente-container">
     
                         <label>
-                            <input type="radio" name="contact-channel" id="channel-mail" required> E-mail
+                            Cliente
+                            <input type="text" name="client-name" id="clientName">
                         </label>
-    
+                        
                         <label>
-                            <input type="radio" name="contact-channel" id="channel-phone" required> Telefone
+                            Empresa
+                            <input type="text" name="company-name" id="companyName">
                         </label>
-    
+        
                         <label>
-                            <input type="radio" name="contact-channel" id="channel-ramal" required> Ramal
+                            E-mail
+                            <input type="text" name="client-mail" id="clientMail">
+                        </label>
+        
+                        <label>
+                            Telefone
+                            <input type="text" name="client-phone" id="clientPhone">
                         </label>
                     </div>
-                    <input type="text" name="" id="contact-channel-input">
-                </div>                
 
-                <div class="container sla-container">
-                    <label>SLA:</label>
-                    <label>
-                        <input type="radio" name="sla-priority" id="sla-priority-1"> 1
-                    </label>
+                    <div class="contact-channel-container">
+                        <label>Canal de Contato</label>
+    
+                        <div class="contact-channel-option">
+                            <label>
+                                <input type="radio" name="contact-channel" id="channelWhats" value="WhatsApp" required> WhatsApp
+                            </label>
+        
+                            <label>
+                                <input type="radio" name="contact-channel" id="channelMail" value="E-mail" required> E-mail
+                            </label>
+        
+                            <label>
+                                <input type="radio" name="contact-channel" id="channelPhone" value="Telefone" required> Telefone
+                            </label>
+        
+                            <label>
+                                <input type="radio" name="contact-channel" id="channelRamal" value="Ramal" required> Ramal
+                            </label>
+                        </div>
+                        <input type="text" name="" id="clientContactChannel">
+                    </div>                
+    
+                    <div class="container chamado-container">
+                        <div class="sla-container">
+                            <label>SLA:</label>
+                        <label>
+                            <input type="radio" name="sla-priority" id="slaPriority1" value="2"> 1
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="sla-priority" id="slaPriority2" value="4"> 2
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="sla-priority" id="slaPriority3" value="12"> 3
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="sla-priority" id="slaPriority4" value="36"> 4
+                        </label>
+    
+                        <label>
+                            <input type="radio" name="sla-priority" id="slaPriority5" value="48"> 5
+                        </label>
+                        </div>
+                        <div class="chamado-container">
+                            <label for="numero-chamado">Nº Chamado:</label>
+                            <input type="text" name="numero-chamado" id="numeroChamado">
+                        </div>
+                    </div>
+                </form>
+                
+            </fieldset>
 
-                    <label>
-                        <input type="radio" name="sla-priority" id="sla-priority-2"> 2
-                    </label>
+            <fieldset>
+                <legend>Atalhos</legend>
 
-                    <label>
-                        <input type="radio" name="sla-priority" id="sla-priority-3"> 3
-                    </label>
-
-                    <label>
-                        <input type="radio" name="sla-priority" id="sla-priority-4"> 4
-                    </label>
-
-                    <label>
-                        <input type="radio" name="sla-priority" id="sla-priority-5"> 5
-                    </label>
+                <div class="button-grid-container">
+                    <button onclick="insereAtalho('inicio')">Início</button>
+                    <button onclick="insereAtalho('finalizacao1')">Finalização I</button>
                 </div>
+            </fieldset>
+        </div>
 
-            </div>
-        </fieldset>
+        <div class="atalho-textarea-container">
+            <textarea name="output-atalho" id="outputAtalho" rows="10" cols="30"></textarea>
+        </div>
+        
     </main>
     
     <script src="../js/script.js"></script>
