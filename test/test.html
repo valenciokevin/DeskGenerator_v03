@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <form action="">
+            <label>
+                Insira seu nome
+                <input type="text" name="clientName" id="clientName">
+            </label>
+            <br>
+            <label>
+                Insira seu whats
+                <input type="text" name="clientPhone" id="clientPhone">
+            </label>
+            <br>
+            <label>
+                Insira seu email
+                <input type="text" name="clientMail" id="clientMail">
+            </label>
+            <br>
+
+            <div>
+                <label>
+                    <input type="radio" name="gender" id="clientGenderM" value="Masculino"> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="gender" id="clientGenderF" value="Feminino"> Feminino
+                </label>
+            </div>
+        </form>
+
+        <div class="button-container">
+            <button onclick="insereAtalho('msg1')">Mensgem 1</button>
+            <button onclick="insereAtalho('msg2')">Mensgem 2</button>
+            <button onclick="insereAtalho('msg3')">Mensgem 3</button>
+        </div>
+
+        <textarea name="output-text" id="outputMessage"></textarea>
+    </main>
+    
+    <script src="test.js"></script>
+</body>
+</html>
