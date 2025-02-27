@@ -10,13 +10,13 @@ function insereAtalho(msgType) {
     // Definindo a mensagem com base no tipo de atalho
     switch (msgType) {
         case 'msg1':
-            message = `Olá, seu nome é '${clientName}'`;
+            message = `Olá, seu nome é ${clientName}`;
             break;
         case 'msg2':
-            message = `Olá '${clientName}', seu email é '${clientMail}'`;
+            message = `Olá '${clientName}', seu email é ${clientMail}`;
             break;
         case 'msg3':
-            message = `Olá '${clientName}', seu número é '${clientPhone}' e seu gênero é '${clientGender}'`;
+            message = `Olá ${clientName}, seu número é ${clientPhone} e seu gênero é ${clientGender}`;
             break;
         default:
             message = 'Mensagem não reconhecida.';
